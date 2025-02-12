@@ -1,4 +1,5 @@
 ## Prerequisites
+- Clone this repository on your local machine and change the directory to it
 - Install ssh-pass on local machine
   ```
   # ubuntu/debian
