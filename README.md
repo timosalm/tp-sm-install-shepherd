@@ -22,10 +22,14 @@
   sheepctl target set -u https://epc-shepherd.lvn.broadcom.net -n Tanzu-Sales
   ```
 
-## Firefox Proxy Setup
+## Getting Started
 ```
+sheepctl lock list -n Tanzu-Sales
+export LOCKID=<lock-id-for-the-regions-env>
 ./get-logins.sh
 ```
+
+## Firefox Proxy Setup
 Follow instructions [here](https://github.com/BrianRagazzi/EPC-shepherd-tpsm/blob/main/tpsm-install.md#configure-firefox-to-use-proxy---necessary-to-reach-vcenter-and-tpsm
 )
 
@@ -35,8 +39,6 @@ Even if it's probably everything configured correctly, follow instructions [here
 
 ## VKS Setup
 ```
-sheepctl lock list -n Tanzu-Sales
-export LOCKID=<lock-id-for-the-regions-env>
 ./vks-setup.sh
 ```
 
