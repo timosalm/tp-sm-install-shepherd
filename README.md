@@ -25,11 +25,12 @@
 ```
 ./get-logins.sh
 ```
-
-https://github.com/BrianRagazzi/EPC-shepherd-tpsm/blob/main/tpsm-install.md#configure-firefox-to-use-proxy---necessary-to-reach-vcenter-and-tpsm
+Follow instructions [here](https://github.com/BrianRagazzi/EPC-shepherd-tpsm/blob/main/tpsm-install.md#configure-firefox-to-use-proxy---necessary-to-reach-vcenter-and-tpsm
+)
 
 ## Supervisor Workload Network Config Validation
-https://github.com/BrianRagazzi/EPC-shepherd-tpsm/blob/main/tpsm-install.md#verify-supervisor-workload-network-config
+Even if it's probably everything configured correctly, follow instructions [here](https://github.com/BrianRagazzi/EPC-shepherd-tpsm/blob/main/tpsm-install.md#verify-supervisor-workload-network-config)
+
 
 ## VKS Setup
 ```
