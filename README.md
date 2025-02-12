@@ -26,7 +26,8 @@ export LOCKID=
 
 ## TP SM Install
 ```
-export TANZU_NET_TOKEN=
-export TANZU_SM_VERSION=10.1.0
+export SUPPORT_PORTAL_TOKEN='{"scope":"TNZ-PLATFORM-SM","access_token":"eyJ2ZXIiO...","expires_in":"15782400"}'
+export ARTIFACTORY_USER=joe.doe@broadcom.com
+export TANZU_SM_VERSION=10.0.0-oct-2024-rc.533-vc0bb325
 ./tp-install
 ```

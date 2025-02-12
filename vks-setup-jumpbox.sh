@@ -51,7 +51,11 @@ kubectl krew install ns
 kubectl krew install konfig
 echo "alias k=kubectl" >> ${HOME}/.bashrc
 
+sudo snap install yq
+
 kubectl apply -f EPC-shepherd-tpsm/resources/vmclass-tpsm.yaml -n testns
 
 kubectl apply -f EPC-shepherd-tpsm/resources/cluster-tpsm.yaml -n testns
 kubectl wait --for=condition=ready --timeout=1h tanzukubernetescluster tpsm -n testns
+kubectl get secret tpsm-kubeconfig -n testns -ojsonpath='{.data.value}' | base64 -d > tpsm.kubeconfig
+kubectl konfig import --save tpsm.kubeconfig
