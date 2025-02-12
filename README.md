@@ -36,7 +36,7 @@ Even if it's probably everything configured correctly, follow instructions [here
 ## VKS Setup
 ```
 sheepctl lock list -n Tanzu-Sales
-export LOCKID=
+export LOCKID=<lock-id-for-the-regions-env>
 ./vks-setup.sh
 ```
 
