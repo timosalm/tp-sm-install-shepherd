@@ -1,11 +1,25 @@
 ## Prerequisites
 - Install ssh-pass on local machine
-```
-# ubuntu/debian
-apt install sshpass
-# macOS
-brew install sshpass
-```
+  ```
+  # ubuntu/debian
+  apt install sshpass
+  # macOS
+  brew install sshpass
+  ```
+- Install sheperd, and sheepctl CLIs on your local machine
+  Ensure you have an SSH key configured for https://github.gwd.broadcom.net.
+  ```
+  ssh-add ~/.ssh/my-broadcom-github-ssh-key
+  brew tap vmware/internal git@github.gwd.broadcom.net:TNZ/shepherd-homebrew-internal.git  
+
+  # If you already have a vmware/internal tap
+  brew tap vmware/internal --custom-remote git@github.gwd.broadcom.net:TNZ/shepherd-homebrew-internal.git
+
+  brew install sheepctl
+  brew install shepherd # Run "brew uninstall shepherd" before if you have installed it
+
+  sheepctl target set -u https://epc-shepherd.lvn.broadcom.net -n Tanzu-Sales
+  ```
 
 ## Firefox Proxy Setup
 ```

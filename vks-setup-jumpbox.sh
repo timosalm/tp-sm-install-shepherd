@@ -49,6 +49,7 @@ PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 kubectl krew install ctx
 kubectl krew install ns
 kubectl krew install konfig
+kubectl krew install view-secret
 echo "alias k=kubectl" >> ${HOME}/.bashrc
 
 sudo snap install yq
