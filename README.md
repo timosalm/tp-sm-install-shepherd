@@ -44,8 +44,8 @@ Even if it's probably everything configured correctly, follow instructions [here
 
 ## TP SM Install
 ```
-export SUPPORT_PORTAL_TOKEN='{"scope":"TNZ-PLATFORM-SM","access_token":"eyJ2ZXIiO...","expires_in":"15782400"}'
-export ARTIFACTORY_USER=joe.doe@broadcom.com
+export ARTIFACTORY_USER=ts024828 # Okta user without @broadcom.net
+export ARTIFACTORY_TOKEN=cmVmdG... # Token from Artifactory instance https://usw1.packages.broadcom.com
 export TANZU_SM_VERSION=10.0.0-oct-2024-rc.533-vc0bb325
 ./tp-install
 ```
