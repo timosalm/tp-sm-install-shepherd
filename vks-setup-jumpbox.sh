@@ -32,8 +32,9 @@ mkdir -p crashd_0.3.10_linux_amd64
 tar -xvf crashd_0.3.10_linux_amd64.tar.gz -C crashd_0.3.10_linux_amd64
 sudo mv crashd_0.3.10_linux_amd64/crashd  /usr/local/bin/crashd
 
-sudo mv om /usr/local/bin/om
 sudo chmod +x om
+sudo mv om /usr/local/bin/om
+
 
 ( \
   set -x; cd "$(mktemp -d)" && \
